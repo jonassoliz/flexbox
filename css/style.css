@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.items{
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width:768px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+}
